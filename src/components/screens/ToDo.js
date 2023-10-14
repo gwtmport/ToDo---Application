@@ -19,6 +19,7 @@ class ToDo extends React.Component {
                 { id: 5, title: "Play Cricket", completed: false, order: 6 },
                 { id: 6, title: "1Km Walking", completed: false, order: 7 },
                 { id: 7, title: "Do Homework", completed: false, order: 8 },
+                { id: 8, title: "Do Homework", completed: false, order: 8 },
 
             ],
             input: "",
