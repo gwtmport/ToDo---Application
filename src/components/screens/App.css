@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    font-family: "baloo_paaji_2regular";
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+@font-face {
+    font-family: "baloo_paaji_2regular";
+    src: url("../assets/fonts/baloopaaji2-regular-webfont.woff2") format("woff2"),
+        url("../assets/fonts/baloopaaji2-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.main {
+    min-height: 100vh;
+    max-width: 795px;
+    margin: 0 auto;
+    text-align: center;
+    border-left: 2px solid #ebebeb;
+    border-right: 2px solid #ebebeb;
+}
+
+.main h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 59px 0px 32px 0px;
+}
+
+.main .wrapper-x {
+    max-width: 565px;
+    margin: 0 auto;
+}
+
+.main .wrapper-x {
+    font-weight: bold;
+    color: #0C0947;
+    text-align: left;
+    max-width: 532px;
+}
+
+.main .wrapper-x h2 {
+    font-size: 30px;
+    color: #0d086c;
+    margin-bottom: 22px;
+}
+
+.main .wrapper-y ul {
+    max-width: 474px;
+    margin: 0 auto;
+}
+
+.main .wrapper-y ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: #000;
+}
+
+.main .wrapper-y ul li div.left {
+    display: flex;
+    align-items: center;
+}
+
+.main .wrapper-y ul li div.left span.round {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #0b0656;
+    margin-right: 14px;
+    transition: transform 0.3s;
+}
+
+.main .wrapper-y ul li div.left span.round:hover {
+    border: 2px solid #160d8d;
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.main .wrapper-y ul li div.left div.title {
+    text-align: left;
+    display: flex;
+    max-width: 400px;
+    margin-right: 8px;
+}
+
+.main .wrapper-y ul li div.left div.title .list-order {
+    margin-right: 8px;
+}
+
+.main .wrapper-y ul li .delete {
+    display: inline-block;
+}
+
+.main .wrapper-y ul li .delete img.delete {
+    width: 16px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.main .wrapper-y ul li .delete img.delete:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+
+
+.main form {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    margin-bottom: 32px;
+}
+
+.main form span.plus {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.main form span.plus img {
+    width: 12px;
+    display: block;
+    position: relative;
+    z-index: 3;
+    bottom: 4px;
+    left: 148px;
+}
+
+
+.main form input[type="text"] {
+    font-size: 18px;
+    padding: 14px 27px 11px 35px;
+    font-weight: 500;
+    border-radius: 6px 0px 0px 6px;
+    border: #dbdbdb 2px solid;
+    position: absolute;
+    margin-left: 148px;
+    width: 404px;
+}
+
+.main form input[type="text"]:focus {
+    border-color: 1px solid #9f9f9f;
+}
+
+.main form button {
+    font-size: 18px;
+    padding: 14px 21px;
+    border-radius: 0px 6px 6px 0px;
+    background: #0b0757;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    z-index: 4;
+    position: relative;
+    left: 522px;
+}
+
+.main form button:hover {
+    cursor: pointer;
+    background: #0d0964;
+}
+
+.main .wrapper-y ul.completed li {
+    color: #36CA9B;
+}
+
+.main .wrapper-y ul.completed li .left .round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #36CA9B;
+    padding: 11px;
+
+}
+
+.main .wrapper-y ul.completed li .left .round:hover {
+    cursor: default;
+    border: 2px solid #36CA9B;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.main .wrapper-y ul.completed li .left .round img {
+    width: 15px;
+}
+
+.main .wrapper-y ul.completed li div.right .revert {
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.main .wrapper-y ul.completed li div.right .revert img {
+    width: 20px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.main .wrapper-y ul.completed li div.right .revert:hover img {
+    transform: scale(1.2);
+    opacity: 0.9;
+    cursor: pointer;
+}
